@@ -1,0 +1,158 @@
+/* header.css */
+.header-bamboo {
+  background-image: url("../img/background-header-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* min-height: 200px; */
+}
+
+.header-bamboo .content-top {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* min-height: 200px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Logo */
+.logobar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* User actions */
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-actions .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: color 0.3s ease;
+}
+
+.user-actions .icon:hover,
+.user-actions .icon:focus {
+  color: #b9f73e;
+  outline: none;
+}
+
+/* Search form */
+.search-form {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.search-form .input-group {
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-form .form-control {
+  border-radius: 4px 0 0 4px;
+  border-color: #ccc;
+}
+
+.search-form .btn {
+  border-radius: 0 4px 4px 0;
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #333;
+}
+
+.search-form .btn:hover {
+  background-color: #b3b3b3;
+  border-color: #b3b3b3;
+}
+
+/* Navigation */
+.navbar-custom {
+  background-color: #b9f73e;
+  padding: 10px 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  font-family: Montserrat-SemiBold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #555;
+}
+
+.nav-link i {
+  margin-right: 5px;
+}
+
+.nav-link-text {
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-link-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-bamboo .content-top {
+    min-height: auto;
+  }
+
+  .logobar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .search-form {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .user-actions {
+    margin-top: 10px;
+  }
+
+  .navbar-nav {
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .nav-link i {
+    margin-right: 10px;
+  }
+}
